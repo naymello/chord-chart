@@ -38,3 +38,16 @@ export const Notes = styled.section`
     text-align: center;
   }
 `;
+
+export const Select = styled.select`
+  margin: 20px;
+  padding: 2.5px;
+  color: #001724;
+  background-color: #FFF;
+  font-weight: bold;
+  width: 90px;
+  height: 2rem;
+  border: 2px solid #001724;
+  border-radius: 5px;
+  outline: none;
+`;
