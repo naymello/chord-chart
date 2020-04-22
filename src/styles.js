@@ -15,7 +15,7 @@ export const Nav = styled.nav`
 `;
 
 export const Logo = styled.img`
-  width: 15%;
+  width: 60px;
 `;
 
 export const Notes = styled.section`
