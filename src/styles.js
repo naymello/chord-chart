@@ -17,3 +17,18 @@ export const Nav = styled.nav`
 export const Logo = styled.img`
   width: 15%;
 `;
+
+export const Notes = styled.section`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: repeat(3, 1fr);
+  row-gap: 20px;
+  margin: 20px;
+
+  a {
+    color: #001724;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+  }
+`;
