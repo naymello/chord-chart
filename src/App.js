@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { GlobalStyle } from './styles'
+import { GlobalStyle } from './styles';
 import Navbar from './components/Navbar';
 import Notes from './components/Notes';
 
