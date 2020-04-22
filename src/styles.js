@@ -1,5 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
+import arrowDown from './assets/arrow-down.svg'
+
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
@@ -41,7 +43,7 @@ export const Notes = styled.section`
 
 export const Select = styled.select`
   margin: 20px;
-  padding: 2.5px;
+  padding-left: 10px;
   color: #001724;
   background-color: #FFF;
   font-weight: bold;
@@ -50,4 +52,14 @@ export const Select = styled.select`
   border: 2px solid #001724;
   border-radius: 5px;
   outline: none;
+
+  appearance: none;
+  background-image: url(${arrowDown});
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: top .45rem right 7.5px;
+
+  option{
+    font-weight: bold;
+  }
 `;
