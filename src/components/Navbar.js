@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import logo from '../assets/logo.png';
 import * as S from '../styles';
 
-export default class Navbar extends Component {
+class Navbar extends Component {
   render() {
     return (
       <S.Nav>
@@ -12,3 +12,5 @@ export default class Navbar extends Component {
     );
   }
 }
+
+export default Navbar;

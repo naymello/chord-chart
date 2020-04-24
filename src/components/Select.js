@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import * as S from '../styles';
 
-export default class Select extends Component {
+class Select extends Component {
   render() {
     return (
       <form>
@@ -14,3 +14,5 @@ export default class Select extends Component {
     );
   }
 }
+
+export default Select;

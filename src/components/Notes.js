@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import * as S from '../styles';
 
-export default class Notes extends Component {
+class Notes extends Component {
   render() {
     return (
       <S.Notes>
@@ -22,3 +22,5 @@ export default class Notes extends Component {
     );
   }
 }
+
+export default Notes;
