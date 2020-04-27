@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 class Note extends Component {
   render() {
     return (
-      <a href="">{this.props.note}</a>
+      <div>
+        <input type="radio" id={this.props.name} name="note" value={this.props.name} />
+        <label for={this.props.name}>{this.props.name}</label>
+      </div>
     );
   }
 }

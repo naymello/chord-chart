@@ -26,18 +26,26 @@ export const Logo = styled.img`
   width: 60px;
 `;
 
-export const Notes = styled.section`
+export const Notes = styled.form`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: repeat(3, 1fr);
   row-gap: 20px;
   margin: 20px;
+  justify-items: center;
 
-  a {
+  input {
+    appearance: none;
+    outline: none;
+  }
+
+  label {
     color: #001724;
-    text-decoration: none;
     font-weight: bold;
-    text-align: center;
+  }
+
+  input:checked + label {
+    color: #3B93BF;
   }
 `;
 
