@@ -24,6 +24,14 @@ export class Notes extends Component {
     }
   }
 
+  handleChange = event => {
+    const { value } = event.target;
+
+    this.setState({
+      selectedNote: value
+    });
+  }
+
   render() {
     return (
       <S.Notes>
