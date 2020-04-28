@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 
-import * as S from './styles';
-import Navbar from './components/Navbar';
-import Select from './components/Select';
-import Notes from './components/Notes';
+import * as S from '../styles';
 
-class App extends Component {
+export class Notes extends Component {
   constructor(props) {
     super(props);
 
@@ -29,14 +26,24 @@ class App extends Component {
 
   render() {
     return (
-      <React.Fragment>
-        <S.GlobalStyle />
-        <Navbar />
-        <Select />
-        <Notes />
-      </React.Fragment>
+      <S.Notes>
+        {this.state.notes.map(note => {
+          return (
+            <div>
+              <input
+                type="radio"
+                id={note.name}
+                name="note"
+                value={note.name}
+                onChange={this.handleChange}
+              />
+              <label for={note.name}>{note.name}</label>
+            </div>
+          );
+        })}
+      </S.Notes>
     );
   }
 }
 
-export default App;
+export default Notes;
