@@ -23,7 +23,8 @@ class App extends Component {
         { id: 10, name: 'A' },
         { id: 11, name: 'A#' },
         { id: 12, name: 'B' }
-      ]
+      ],
+      selectedNote: 'C'
     }
   }
 
