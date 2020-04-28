@@ -16,7 +16,7 @@ export class Notes extends Component {
                 value={note.name}
                 onChange={this.props.handleChange}
               />
-              <label for={note.name}>{note.name}</label>
+              <label htmlFor={note.name}>{note.name}</label>
             </div>
           );
         })}
