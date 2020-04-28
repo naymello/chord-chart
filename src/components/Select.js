@@ -6,10 +6,10 @@ class Select extends Component {
   render() {
     return (
       <form>
-        <S.Select>
+        <S.Instrument>
           <option value="Guitar">Guitar</option>
           <option value="Guitar">Piano</option>
-        </S.Select>
+        </S.Instrument>
       </form>
     );
   }

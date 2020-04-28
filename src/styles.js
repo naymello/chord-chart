@@ -49,7 +49,7 @@ export const Notes = styled.form`
   }
 `;
 
-export const Select = styled.select`
+export const Instrument = styled.select`
   margin: 20px;
   padding-left: 10px;
   color: #001724;
