@@ -8,7 +8,7 @@ export class Notes extends Component {
       <S.Notes>
         {this.props.notes.map(note => {
           return (
-            <div>
+            <div key={note.id}>
               <input
                 type="radio"
                 id={note.name}
