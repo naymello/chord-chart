@@ -5,7 +5,7 @@ import * as S from '../styles';
 export class Notes extends Component {
   render() {
     return (
-      <S.Notes>
+      <S.Chords>
         {this.props.notes.map(note => {
           return (
             <div key={note.id}>
@@ -20,7 +20,7 @@ export class Notes extends Component {
             </div>
           );
         })}
-      </S.Notes>
+      </S.Chords>
     );
   }
 }
