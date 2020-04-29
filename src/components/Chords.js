@@ -60,8 +60,14 @@ export class Chords extends Component {
                   id={chordName}
                   name="chord"
                   value={chordName}
+                  onChange={this.props.handleChordChange}
                 />
-                <label htmlFor={chordName}>{chordName}</label>
+                <label
+                  htmlFor={chordName}
+                  style={{ color: chordName === this.props.selectedChord ? '#3B93BF' : '#001724' }}
+                >
+                  {chordName}
+                </label>
               </div>
             );
           })}

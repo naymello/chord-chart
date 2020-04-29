@@ -25,7 +25,8 @@ class App extends Component {
         { id: 11, name: 'A#' },
         { id: 12, name: 'B' }
       ],
-      selectedNote: 'C'
+      selectedNote: 'C',
+      selectedChord: ''
     }
   }
 
@@ -37,6 +38,14 @@ class App extends Component {
     });
   }
 
+  handleChordChange = event => {
+    const { value } = event.target;
+
+    this.setState({
+      selectedChord: value
+    });
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -45,10 +54,14 @@ class App extends Component {
         <Select />
         <Notes
           notes={this.state.notes}
-          handleChange={this.handleNoteChange}
+          handleNoteChange={this.handleNoteChange}
           selectedNote={this.state.selectedNote}
         />
-        <Chords selectedNote={this.state.selectedNote} />
+        <Chords
+          handleChordChange={this.handleChordChange}
+          selectedNote={this.state.selectedNote}
+          selectedChord={this.state.selectedChord}
+        />
       </React.Fragment>
     );
   }
