@@ -46,7 +46,11 @@ export class Chords extends Component {
   render() {
     return (
       <div>
-        <S.ShowAll onClick={this.toggleShowAll}>Show all {this.props.selectedNote} chords</S.ShowAll>
+        <S.ShowAll
+          onClick={this.toggleShowAll}
+        >
+          {this.state.showAll ? 'Hide' : 'Show'} all {this.props.selectedNote} chords
+        </S.ShowAll>
 
         <S.Chords>
           {this.state.chordTypes.map(chordType => {
