@@ -43,7 +43,11 @@ class App extends Component {
         <S.GlobalStyle />
         <Navbar />
         <Select />
-        <Notes notes={this.state.notes} handleChange={this.handleChange} />
+        <Notes
+          notes={this.state.notes}
+          handleChange={this.handleChange}
+          selectedNote={this.state.selectedNote}
+        />
         <Chords selectedNote={this.state.selectedNote} />
       </React.Fragment>
     );
