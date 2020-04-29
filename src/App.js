@@ -26,7 +26,7 @@ class App extends Component {
         { id: 12, name: 'B' }
       ],
       selectedNote: 'C',
-      selectedChord: ''
+      selectedChord: 'C'
     }
   }
 
