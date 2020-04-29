@@ -7,8 +7,8 @@ class Select extends Component {
     return (
       <form>
         <S.Instrument>
-          <option value="Guitar">Guitar</option>
-          <option value="Guitar">Piano</option>
+          <option value="guitar">Guitar</option>
+          <option value="piano">Piano</option>
         </S.Instrument>
       </form>
     );
