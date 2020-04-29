@@ -34,7 +34,8 @@ class App extends Component {
     const { value } = event.target;
 
     this.setState({
-      selectedNote: value
+      selectedNote: value,
+      selectedChord: value
     });
   }
 
