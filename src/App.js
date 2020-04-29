@@ -29,7 +29,7 @@ class App extends Component {
     }
   }
 
-  handleChange = event => {
+  handleNoteChange = event => {
     const { value } = event.target;
 
     this.setState({
@@ -45,7 +45,7 @@ class App extends Component {
         <Select />
         <Notes
           notes={this.state.notes}
-          handleChange={this.handleChange}
+          handleChange={this.handleNoteChange}
           selectedNote={this.state.selectedNote}
         />
         <Chords selectedNote={this.state.selectedNote} />
