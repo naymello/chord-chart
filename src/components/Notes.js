@@ -35,7 +35,7 @@ export class Notes extends Component {
                 id={note.name}
                 name="note"
                 value={note.name}
-                onChange={this.props.handleNoteChange}
+                onClick={this.props.handleNoteChange}
               />
               <label
                 style={{ color: note.name === this.props.selectedNote ? '#3B93BF' : '#001724' }}

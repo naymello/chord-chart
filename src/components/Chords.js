@@ -59,7 +59,7 @@ export class Chords extends Component {
                   id={chordName}
                   name="chord"
                   value={chordName}
-                  onChange={this.props.handleChordChange}
+                  onClick={this.props.handleChordChange}
                 />
                 <label
                   htmlFor={chordName}
