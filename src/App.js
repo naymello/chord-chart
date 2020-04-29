@@ -11,6 +11,7 @@ class App extends Component {
     super(props);
 
     this.state = {
+      selectedInstrument: 'guitar',
       selectedNote: 'C',
       selectedChord: 'C'
     }
@@ -33,12 +34,20 @@ class App extends Component {
     });
   }
 
+  handleInstrumentChange = event => {
+    const { value } = event.target;
+
+    this.setState({
+      selectedInstrument: value
+    });
+  }
+
   render() {
     return (
       <React.Fragment>
         <S.GlobalStyle />
         <Navbar />
-        <Select />
+        <Select handleInstrumentChange={this.handleInstrumentChange} />
         <Notes
           handleNoteChange={this.handleNoteChange}
           selectedNote={this.state.selectedNote}
