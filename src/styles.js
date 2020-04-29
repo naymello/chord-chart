@@ -43,10 +43,6 @@ export const Chords = styled.form`
     color: #001724;
     font-weight: bold;
   }
-
-  input:checked + label {
-    color: #3B93BF;
-  }
 `;
 
 export const Instrument = styled.select`
@@ -70,4 +66,10 @@ export const Instrument = styled.select`
   option{
     font-weight: bold;
   }
+`;
+
+export const ShowAll = styled.span`
+  margin: 20px;
+  color: #001724;
+  font-weight: bold;
 `;

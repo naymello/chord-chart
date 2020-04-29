@@ -16,7 +16,12 @@ export class Notes extends Component {
                 value={note.name}
                 onChange={this.props.handleChange}
               />
-              <label htmlFor={note.name}>{note.name}</label>
+              <label
+                style={{ color: note.name === this.props.selectedNote ? '#3B93BF' : '#001724' }}
+                htmlFor={note.name}
+              >
+                {note.name}
+              </label>
             </div>
           );
         })}
