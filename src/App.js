@@ -4,6 +4,7 @@ import * as S from './styles';
 import Navbar from './components/Navbar';
 import Select from './components/Select';
 import Notes from './components/Notes';
+import Chords from './components/Chords';
 
 class App extends Component {
   constructor(props) {
@@ -43,6 +44,7 @@ class App extends Component {
         <Navbar />
         <Select />
         <Notes notes={this.state.notes} handleChange={this.handleChange} />
+        <Chords selectedNote={this.state.selectedNote} />
       </React.Fragment>
     );
   }
