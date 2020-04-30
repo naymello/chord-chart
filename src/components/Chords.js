@@ -34,22 +34,17 @@ export class Chords extends Component {
         { id: 24, name: 'm7b5' },
         { id: 25, name: 'aug' },
         { id: 26, name: 'aug7' }
-      ],
-      showAll: false
+      ]
     }
-  }
-
-  toggleShowAll = () => {
-    this.setState({ showAll: !this.state.showAll })
   }
 
   render() {
     return (
       <div>
         <S.ShowAll
-          onClick={this.toggleShowAll}
+          onClick={this.props.toggleShowAll}
         >
-          {this.state.showAll ? 'Hide' : 'Show'} all {this.props.selectedNote} chords
+          {this.props.showAll ? 'Hide' : 'Show'} all {this.props.selectedNote} chords
         </S.ShowAll>
 
         <S.Chords>
@@ -57,7 +52,7 @@ export class Chords extends Component {
             const chordName = `${this.props.selectedNote}${chordType.name}`;
 
             return (
-              <div key={chordType.id} style={{ display: this.state.showAll ? 'block' : 'none' }}>
+              <div key={chordType.id} style={{ display: this.props.showAll ? 'block' : 'none' }}>
                 <input
                   type="radio"
                   id={chordName}
