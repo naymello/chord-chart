@@ -9,12 +9,17 @@ export class Piano extends Component {
         height="109.143"
         viewBox="0 0 338.071 109.143"
       >
-        <g stroke="#001724" strokeWidth="2" transform="translate(-38 -598)">
-          <g fill="none" transform="translate(38 598)">
+        <g
+          id="piano"
+          stroke="#001724"
+          strokeWidth="2"
+          transform="translate(-38 -598)"
+        >
+          <g id="pianoBorder" fill="none" transform="translate(38 598)">
             <rect width="338" height="109" stroke="none" rx="7.5"></rect>
             <rect width="336" height="107" x="1" y="1" rx="6.5"></rect>
           </g>
-          <g fill="none">
+          <g id="c1" fill="none">
             <path
               stroke="none"
               d="M7.5 0h18.571v109.143H7.5a7.5 7.5 0 01-7.5-7.5V7.5A7.5 7.5 0 017.5 0z"
@@ -25,55 +30,55 @@ export class Piano extends Component {
               transform="translate(38 598)"
             ></path>
           </g>
-          <g fill="none" transform="translate(62 598)">
+          <g id="d1" fill="none" transform="translate(62 598)">
             <path stroke="none" d="M0 0H26.071V109.143H0z"></path>
             <path d="M1 1H25.071V108.143H1z"></path>
           </g>
-          <g fill="none" transform="translate(86 598)">
+          <g id="e1" fill="none" transform="translate(86 598)">
             <path stroke="none" d="M0 0H26.071V109.143H0z"></path>
             <path d="M1 1H25.071V108.143H1z"></path>
           </g>
-          <g fill="none" transform="translate(110 598)">
+          <g id="f1" fill="none" transform="translate(110 598)">
             <path stroke="none" d="M0 0H26.071V109.143H0z"></path>
             <path d="M1 1H25.071V108.143H1z"></path>
           </g>
-          <g fill="none" transform="translate(134 598)">
+          <g id="g1" fill="none" transform="translate(134 598)">
             <path stroke="none" d="M0 0H26.071V109.143H0z"></path>
             <path d="M1 1H25.071V108.143H1z"></path>
           </g>
-          <g fill="none" transform="translate(158 598)">
+          <g id="a1" fill="none" transform="translate(158 598)">
             <path stroke="none" d="M0 0H26.071V109.143H0z"></path>
             <path d="M1 1H25.071V108.143H1z"></path>
           </g>
-          <g fill="none" transform="translate(182 598)">
+          <g id="b1" fill="none" transform="translate(182 598)">
             <path stroke="none" d="M0 0H26.071V109.143H0z"></path>
             <path d="M1 1H25.071V108.143H1z"></path>
           </g>
-          <g fill="none" transform="translate(206 598)">
+          <g id="c2" fill="none" transform="translate(206 598)">
             <path stroke="none" d="M0 0H26.071V109.143H0z"></path>
             <path d="M1 1H25.071V108.143H1z"></path>
           </g>
-          <g fill="none" transform="translate(230 598)">
+          <g id="d2" fill="none" transform="translate(230 598)">
             <path stroke="none" d="M0 0H26.071V109.143H0z"></path>
             <path d="M1 1H25.071V108.143H1z"></path>
           </g>
-          <g fill="none" transform="translate(254 598)">
+          <g id="e2" fill="none" transform="translate(254 598)">
             <path stroke="none" d="M0 0H26.071V109.143H0z"></path>
             <path d="M1 1H25.071V108.143H1z"></path>
           </g>
-          <g fill="none" transform="translate(278 598)">
+          <g id="f2" fill="none" transform="translate(278 598)">
             <path stroke="none" d="M0 0H26.071V109.143H0z"></path>
             <path d="M1 1H25.071V108.143H1z"></path>
           </g>
-          <g fill="none" transform="translate(302 598)">
+          <g id="g2" fill="none" transform="translate(302 598)">
             <path stroke="none" d="M0 0H26.071V109.143H0z"></path>
             <path d="M1 1H25.071V108.143H1z"></path>
           </g>
-          <g fill="none" transform="translate(326 598)">
+          <g id="a2" fill="none" transform="translate(326 598)">
             <path stroke="none" d="M0 0H26.071V109.143H0z"></path>
             <path d="M1 1H25.071V108.143H1z"></path>
           </g>
-          <g fill="none">
+          <g id="b2" fill="none">
             <path
               stroke="none"
               d="M0 0h18.571a7.5 7.5 0 017.5 7.5v94.143a7.5 7.5 0 01-7.5 7.5H0V0z"
@@ -84,7 +89,7 @@ export class Piano extends Component {
               transform="translate(350 598)"
             ></path>
           </g>
-          <g fill="#001724">
+          <g id="c-sharp1" fill="#001724">
             <path
               stroke="none"
               d="M0 0h15.071v65.087a2.5 2.5 0 01-2.5 2.5H2.5a2.5 2.5 0 01-2.5-2.5V0z"
@@ -96,7 +101,7 @@ export class Piano extends Component {
               transform="translate(55.5 598)"
             ></path>
           </g>
-          <g fill="#001724">
+          <g id="d-sharp1" fill="#001724">
             <path
               stroke="none"
               d="M0 0h15.071v65.087a2.5 2.5 0 01-2.5 2.5H2.5a2.5 2.5 0 01-2.5-2.5V0z"
@@ -108,7 +113,7 @@ export class Piano extends Component {
               transform="translate(79.5 598)"
             ></path>
           </g>
-          <g fill="#001724">
+          <g id="f-sharp1" fill="#001724">
             <path
               stroke="none"
               d="M0 0h15.071v65.087a2.5 2.5 0 01-2.5 2.5H2.5a2.5 2.5 0 01-2.5-2.5V0z"
@@ -120,7 +125,7 @@ export class Piano extends Component {
               transform="translate(127.5 598)"
             ></path>
           </g>
-          <g fill="#001724">
+          <g id="g-sharp1" fill="#001724">
             <path
               stroke="none"
               d="M0 0h15.071v65.087a2.5 2.5 0 01-2.5 2.5H2.5a2.5 2.5 0 01-2.5-2.5V0z"
@@ -132,7 +137,7 @@ export class Piano extends Component {
               transform="translate(151.5 598)"
             ></path>
           </g>
-          <g fill="#001724">
+          <g id="a-sharp1" fill="#001724">
             <path
               stroke="none"
               d="M0 0h15.071v65.087a2.5 2.5 0 01-2.5 2.5H2.5a2.5 2.5 0 01-2.5-2.5V0z"
@@ -144,7 +149,7 @@ export class Piano extends Component {
               transform="translate(175.5 598)"
             ></path>
           </g>
-          <g fill="#001724">
+          <g id="c-sharp-2" fill="#001724">
             <path
               stroke="none"
               d="M0 0h15.071v65.087a2.5 2.5 0 01-2.5 2.5H2.5a2.5 2.5 0 01-2.5-2.5V0z"
@@ -156,7 +161,7 @@ export class Piano extends Component {
               transform="translate(223.5 598)"
             ></path>
           </g>
-          <g fill="#001724">
+          <g id="d-sharp-2" fill="#001724">
             <path
               stroke="none"
               d="M0 0h15.071v65.087a2.5 2.5 0 01-2.5 2.5H2.5a2.5 2.5 0 01-2.5-2.5V0z"
@@ -168,7 +173,7 @@ export class Piano extends Component {
               transform="translate(247.5 598)"
             ></path>
           </g>
-          <g fill="#001724">
+          <g id="f-sharp-2" fill="#001724">
             <path
               stroke="none"
               d="M0 0h15.071v65.087a2.5 2.5 0 01-2.5 2.5H2.5a2.5 2.5 0 01-2.5-2.5V0z"
@@ -180,7 +185,7 @@ export class Piano extends Component {
               transform="translate(295.5 598)"
             ></path>
           </g>
-          <g fill="#001724">
+          <g id="g-sharp-2" fill="#001724">
             <path
               stroke="none"
               d="M0 0h15.071v65.087a2.5 2.5 0 01-2.5 2.5H2.5a2.5 2.5 0 01-2.5-2.5V0z"
@@ -192,7 +197,7 @@ export class Piano extends Component {
               transform="translate(319.5 598)"
             ></path>
           </g>
-          <g fill="#001724">
+          <g id="a-sharp-2" fill="#001724">
             <path
               stroke="none"
               d="M0 0h15.071v65.087a2.5 2.5 0 01-2.5 2.5H2.5a2.5 2.5 0 01-2.5-2.5V0z"
