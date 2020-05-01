@@ -7,8 +7,8 @@ class Select extends Component {
     return (
       <form>
         <S.Instrument onChange={this.props.handleInstrumentChange}>
-          <option value="guitar">Guitar</option>
           <option value="piano">Piano</option>
+          <option value="guitar">Guitar</option>
         </S.Instrument>
       </form>
     );
