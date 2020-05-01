@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Select from './components/Select';
 import Notes from './components/Notes';
 import Chords from './components/Chords';
+import Piano from './components/Piano';
 
 class App extends Component {
   constructor(props) {
@@ -65,6 +66,7 @@ class App extends Component {
           selectedNote={this.state.selectedNote}
           selectedChord={this.state.selectedChord}
         />
+        <Piano />
       </React.Fragment>
     );
   }
