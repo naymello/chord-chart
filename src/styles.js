@@ -67,6 +67,7 @@ export const Instrument = styled.select`
 `;
 
 export const ShowAll = styled.span`
+  font-size: 14px;
   margin: 20px;
   color: #001724;
   font-weight: bold;
