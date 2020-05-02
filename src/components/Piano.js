@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
+import * as S from '../styles';
+
 export class Piano extends Component {
   render() {
     return (
-      <svg
+      <S.Piano
         xmlns="http://www.w3.org/2000/svg"
         width="338.071"
         height="109.143"
@@ -210,7 +212,7 @@ export class Piano extends Component {
             ></path>
           </g>
         </g>
-      </svg>
+      </S.Piano>
     );
   }
 }
