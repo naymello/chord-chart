@@ -26,27 +26,30 @@ export class Notes extends Component {
 
   render() {
     return (
-      <S.Chords>
-        {this.state.notes.map(note => {
-          return (
-            <div key={note.id}>
-              <input
-                type="radio"
-                id={note.name}
-                name="note"
-                value={note.name}
-                onClick={this.props.handleNoteChange}
-              />
-              <label
-                style={{ color: note.name === this.props.selectedNote ? '#3B93BF' : '#001724' }}
-                htmlFor={note.name}
-              >
-                {note.name}
-              </label>
-            </div>
-          );
-        })}
-      </S.Chords>
+      <React.Fragment>
+        <S.Text>Select a note:</S.Text>
+        <S.Chords>
+          {this.state.notes.map(note => {
+            return (
+              <div key={note.id}>
+                <input
+                  type="radio"
+                  id={note.name}
+                  name="note"
+                  value={note.name}
+                  onClick={this.props.handleNoteChange}
+                />
+                <label
+                  style={{ color: note.name === this.props.selectedNote ? '#3B93BF' : '#001724' }}
+                  htmlFor={note.name}
+                >
+                  {note.name}
+                </label>
+              </div>
+            );
+          })}
+        </S.Chords>
+      </React.Fragment>
     );
   }
 }
