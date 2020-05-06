@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import * as S from './styles';
 import Navbar from './components/Navbar';
-import Select from './components/Select';
 import Notes from './components/Notes';
 import Chords from './components/Chords';
 import Piano from './components/Piano';
@@ -12,7 +11,6 @@ class App extends Component {
     super(props);
 
     this.state = {
-      selectedInstrument: 'guitar',
       selectedNote: 'C',
       selectedChord: 'C',
       showAll: false
@@ -37,14 +35,6 @@ class App extends Component {
     });
   }
 
-  handleInstrumentChange = event => {
-    const { value } = event.target;
-
-    this.setState({
-      selectedInstrument: value
-    });
-  }
-
   toggleShowAll = () => {
     this.setState({ showAll: !this.state.showAll })
   }
@@ -54,7 +44,6 @@ class App extends Component {
       <React.Fragment>
         <S.GlobalStyle />
         <Navbar />
-        <Select handleInstrumentChange={this.handleInstrumentChange} />
         <Notes
           handleNoteChange={this.handleNoteChange}
           selectedNote={this.state.selectedNote}
