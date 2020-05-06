@@ -41,11 +41,11 @@ export class Chords extends Component {
   render() {
     return (
       <div>
-        <S.ShowAll
+        <S.Text
           onClick={this.props.toggleShowAll}
         >
           {this.props.showAll ? 'Hide' : 'Show'} all {this.props.selectedNote} chords
-        </S.ShowAll>
+        </S.Text>
 
         <S.Chords>
           {this.state.chordTypes.map(chordType => {

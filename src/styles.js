@@ -66,7 +66,7 @@ export const Instrument = styled.select`
   }
 `;
 
-export const ShowAll = styled.span`
+export const Text = styled.span`
   font-size: 14px;
   margin: 20px;
   color: #001724;
