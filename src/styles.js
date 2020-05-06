@@ -18,6 +18,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 `;
 
 export const Logo = styled.img`
