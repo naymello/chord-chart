@@ -55,7 +55,7 @@ class App extends Component {
           selectedNote={this.state.selectedNote}
           selectedChord={this.state.selectedChord}
         />
-        <Piano />
+        <Piano selectedChord={this.state.selectedChord} />
       </React.Fragment>
     );
   }
