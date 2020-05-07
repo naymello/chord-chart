@@ -73,9 +73,3 @@ export const Text = styled.span`
   color: #001724;
   font-weight: bold;
 `;
-
-export const Piano = styled.svg`
-  width: calc(100% - 40px);
-  height: auto;
-  margin: 0 20px;
-`;

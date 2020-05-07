@@ -5,8 +5,14 @@ import piano from '../assets/piano.svg';
 
 export class Piano extends Component {
   render() {
+    const pianoStyle = {
+      margin: '0 20px',
+      width: 'calc(100% - 40px)',
+      height: 'auto'
+    }
+
     return (
-      <SvgLoader width="100%" height="auto" path={piano}>
+      <SvgLoader style={pianoStyle} path={piano}>
       </SvgLoader>
     );
   }
