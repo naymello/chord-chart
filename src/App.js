@@ -31,7 +31,8 @@ class App extends Component {
     const { value } = event.target;
 
     this.setState({
-      selectedChord: value
+      selectedChord: value,
+      showAll: false
     });
   }
 
