@@ -55,14 +55,14 @@ export class Chords extends Component {
               <div key={chordType.id} style={{ display: this.props.showAll ? 'block' : 'none' }}>
                 <input
                   type="radio"
-                  id={chordName}
+                  id={chordType.name}
                   name="chord"
-                  value={chordName}
+                  value={chordType.name}
                   onClick={this.props.handleChordChange}
                 />
                 <label
-                  htmlFor={chordName}
-                  style={{ color: chordName === this.props.selectedChord ? '#3B93BF' : '#001724' }}
+                  htmlFor={chordType.name}
+                  style={{ color: chordType.name === this.props.selectedChord ? '#3B93BF' : '#001724' }}
                 >
                   {chordName}
                 </label>

@@ -12,7 +12,7 @@ class App extends Component {
 
     this.state = {
       selectedNote: 'C',
-      selectedChord: 'C',
+      selectedChordType: '',
       showAll: false
     }
   }
@@ -22,7 +22,7 @@ class App extends Component {
 
     this.setState({
       selectedNote: value,
-      selectedChord: value,
+      selectedChordType: '',
       showAll: false
     });
   }
@@ -31,7 +31,7 @@ class App extends Component {
     const { value } = event.target;
 
     this.setState({
-      selectedChord: value,
+      selectedChordType: value,
       showAll: false
     });
   }
@@ -54,9 +54,9 @@ class App extends Component {
           toggleShowAll={this.toggleShowAll}
           showAll={this.state.showAll}
           selectedNote={this.state.selectedNote}
-          selectedChord={this.state.selectedChord}
+          selectedChordType={this.state.selectedChordType}
         />
-        <Piano selectedChord={this.state.selectedChord} />
+        <Piano selectedChordType={this.state.selectedChordType} />
       </React.Fragment>
     );
   }
