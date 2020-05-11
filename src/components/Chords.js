@@ -60,10 +60,7 @@ export class Chords extends Component {
                   value={chordType.name}
                   onClick={this.props.handleChordChange}
                 />
-                <label
-                  htmlFor={chordType.name}
-                  style={{ color: chordType.name === this.props.selectedChord ? '#3B93BF' : '#001724' }}
-                >
+                <label htmlFor={chordType.name}>
                   {chordName}
                 </label>
               </div>
