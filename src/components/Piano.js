@@ -4,8 +4,8 @@ import { SvgLoader, SvgProxy } from 'react-svgmt';
 import piano from '../assets/piano.svg';
 
 export class Piano extends Component {
-  //Only notes from the first octave of the piano have a 'note' property.
-  //That's because they are the only ones that will be used as roots for the chords.
+  /* Only notes from the first octave of the piano have a 'note' property.
+  That's because they are the only ones that will be used as roots for the chords. */
   pianoNotes = [
     { id: 'C1', note: 'C' },
     { id: 'C-sharp1', note: 'C#' },
@@ -31,7 +31,7 @@ export class Piano extends Component {
     { id: 'A2' },
     { id: 'A-sharp2' },
     { id: 'B2' }
-  ]
+  ];
 
   render() {
     const pianoStyle = {
