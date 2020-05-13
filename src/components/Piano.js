@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import * as S from '../styles';
 import { SvgLoader, SvgProxy } from 'react-svgmt';
 
 import pianoC24 from '../assets/24-c-piano.svg';
@@ -102,17 +103,22 @@ export class Piano extends Component {
     }
 
     return (
-      <SvgLoader style={pianoStyle} path={pianoC24}>
-        {/* This resets the piano to its original color.
+      <React.Fragment>
+        <S.Text style={{ fontSize: '18px' }}>
+          {`${this.props.selectedNote}${this.props.selectedChordType} piano chord`}
+        </S.Text>
+        <SvgLoader style={pianoStyle} path={pianoC24}>
+          {/* This resets the piano to its original color.
           Otherwise, the previous selected chords would appear
           along with the new ones, making it unreadable*/}
-        <SvgProxy selector="g[fill='none']" fill="none" />
-        <SvgProxy selector="g[fill='#001724']" fill="#001724" />
+          <SvgProxy selector="g[fill='none']" fill="none" />
+          <SvgProxy selector="g[fill='#001724']" fill="#001724" />
 
-        {this.makeChord(this.props.selectedNote, this.props.selectedChordType).map(note => (
-          <SvgProxy key={note} selector={`#${note}`} fill="#3B93BF" />
-        ))}
-      </SvgLoader>
+          {this.makeChord(this.props.selectedNote, this.props.selectedChordType).map(note => (
+            <SvgProxy key={note} selector={`#${note}`} fill="#3B93BF" />
+          ))}
+        </SvgLoader>
+      </React.Fragment>
     );
   }
 }
