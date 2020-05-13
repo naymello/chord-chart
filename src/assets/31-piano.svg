@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="434.071" height="109.143" viewBox="0 0 434.071 109.143">
+  <g id="_31piano" data-name="31piano" transform="translate(-48 -906)">
+    <g id="F1" transform="translate(48 906)" fill="none" stroke="#001724" stroke-width="2">
+      <path d="M7.5,0H26.071a0,0,0,0,1,0,0V109.143a0,0,0,0,1,0,0H7.5a7.5,7.5,0,0,1-7.5-7.5V7.5A7.5,7.5,0,0,1,7.5,0Z" stroke="none"/>
+      <path d="M7.5,1H24.071a1,1,0,0,1,1,1V107.143a1,1,0,0,1-1,1H7.5a6.5,6.5,0,0,1-6.5-6.5V7.5A6.5,6.5,0,0,1,7.5,1Z" fill="none"/>
+    </g>
+    <g id="G1" transform="translate(72 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="A1" transform="translate(96 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="B1" transform="translate(120 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="C2" transform="translate(144 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="D2" transform="translate(168 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="E2" transform="translate(192 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="F2" transform="translate(216 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="G2" transform="translate(240 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="A2" transform="translate(264 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="B2" transform="translate(288 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="C3" transform="translate(312 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="D3" transform="translate(336 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="E3" transform="translate(360 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="F3" transform="translate(384 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="G3" transform="translate(408 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="A3" transform="translate(432 906)" fill="none" stroke="#001724" stroke-width="2">
+      <rect width="26.071" height="109.143" stroke="none"/>
+      <rect x="1" y="1" width="24.071" height="107.143" fill="none"/>
+    </g>
+    <g id="B3" transform="translate(456 906)" fill="none" stroke="#001724" stroke-width="2">
+      <path d="M0,0H18.571a7.5,7.5,0,0,1,7.5,7.5v94.143a7.5,7.5,0,0,1-7.5,7.5H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M2,1H18.571a6.5,6.5,0,0,1,6.5,6.5v94.143a6.5,6.5,0,0,1-6.5,6.5H2a1,1,0,0,1-1-1V2A1,1,0,0,1,2,1Z" fill="none"/>
+    </g>
+    <g id="F-sharp1" transform="translate(65.5 906)" fill="#001724" stroke="#001724" stroke-width="2">
+      <path d="M0,0H15.071a0,0,0,0,1,0,0V65.087a2.5,2.5,0,0,1-2.5,2.5H2.5a2.5,2.5,0,0,1-2.5-2.5V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M2,1H13.071a1,1,0,0,1,1,1V65.087a1.5,1.5,0,0,1-1.5,1.5H2.5a1.5,1.5,0,0,1-1.5-1.5V2A1,1,0,0,1,2,1Z" fill="none"/>
+    </g>
+    <g id="G-sharp1" transform="translate(89.5 906)" fill="#001724">
+      <path d="M 12.5713996887207 66.58733367919922 L 2.499999761581421 66.58733367919922 C 1.672899842262268 66.58733367919922 0.9999998211860657 65.91443634033203 0.9999998211860657 65.08733367919922 L 0.9999998211860657 0.9999968409538269 L 14.0713996887207 0.9999968409538269 L 14.0713996887207 65.08733367919922 C 14.0713996887207 65.91443634033203 13.39849948883057 66.58733367919922 12.5713996887207 66.58733367919922 Z" stroke="none"/>
+      <path d="M 2 2 L 2 65.08733367919922 C 2 65.363037109375 2.224299430847168 65.58733367919922 2.5 65.58733367919922 L 12.5713996887207 65.58733367919922 C 12.84709930419922 65.58733367919922 13.0713996887207 65.363037109375 13.0713996887207 65.08733367919922 L 13.0713996887207 2 L 2 2 M 0 0 L 15.0713996887207 0 L 15.0713996887207 65.08733367919922 C 15.0713996887207 66.46804809570313 13.95211124420166 67.58733367919922 12.5713996887207 67.58733367919922 L 2.5 67.58733367919922 C 1.119288444519043 67.58733367919922 0 66.46804809570313 0 65.08733367919922 L 0 0 Z" stroke="none" fill="#001724"/>
+    </g>
+    <g id="A-sharp1" transform="translate(113.5 906)" fill="#001724" stroke="#001724" stroke-width="2">
+      <path d="M0,0H15.071a0,0,0,0,1,0,0V65.087a2.5,2.5,0,0,1-2.5,2.5H2.5a2.5,2.5,0,0,1-2.5-2.5V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M2,1H13.071a1,1,0,0,1,1,1V65.087a1.5,1.5,0,0,1-1.5,1.5H2.5a1.5,1.5,0,0,1-1.5-1.5V2A1,1,0,0,1,2,1Z" fill="none"/>
+    </g>
+    <g id="C-sharp2" transform="translate(161.5 906)" fill="#001724" stroke="#001724" stroke-width="2">
+      <path d="M0,0H15.071a0,0,0,0,1,0,0V65.087a2.5,2.5,0,0,1-2.5,2.5H2.5a2.5,2.5,0,0,1-2.5-2.5V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M2,1H13.071a1,1,0,0,1,1,1V65.087a1.5,1.5,0,0,1-1.5,1.5H2.5a1.5,1.5,0,0,1-1.5-1.5V2A1,1,0,0,1,2,1Z" fill="none"/>
+    </g>
+    <g id="D-sharp2" transform="translate(185.5 906)" fill="#001724" stroke="#001724" stroke-width="2">
+      <path d="M0,0H15.071a0,0,0,0,1,0,0V65.087a2.5,2.5,0,0,1-2.5,2.5H2.5a2.5,2.5,0,0,1-2.5-2.5V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M2,1H13.071a1,1,0,0,1,1,1V65.087a1.5,1.5,0,0,1-1.5,1.5H2.5a1.5,1.5,0,0,1-1.5-1.5V2A1,1,0,0,1,2,1Z" fill="none"/>
+    </g>
+    <g id="F-sharp2" transform="translate(233.5 906)" fill="#001724" stroke="#001724" stroke-width="2">
+      <path d="M0,0H15.071a0,0,0,0,1,0,0V65.087a2.5,2.5,0,0,1-2.5,2.5H2.5a2.5,2.5,0,0,1-2.5-2.5V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M2,1H13.071a1,1,0,0,1,1,1V65.087a1.5,1.5,0,0,1-1.5,1.5H2.5a1.5,1.5,0,0,1-1.5-1.5V2A1,1,0,0,1,2,1Z" fill="none"/>
+    </g>
+    <g id="G-sharp2" transform="translate(257.5 906)" fill="#001724" stroke="#001724" stroke-width="2">
+      <path d="M0,0H15.071a0,0,0,0,1,0,0V65.087a2.5,2.5,0,0,1-2.5,2.5H2.5a2.5,2.5,0,0,1-2.5-2.5V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M2,1H13.071a1,1,0,0,1,1,1V65.087a1.5,1.5,0,0,1-1.5,1.5H2.5a1.5,1.5,0,0,1-1.5-1.5V2A1,1,0,0,1,2,1Z" fill="none"/>
+    </g>
+    <g id="A-sharp2" transform="translate(281.5 906)" fill="#001724" stroke="#001724" stroke-width="2">
+      <path d="M0,0H15.071a0,0,0,0,1,0,0V65.087a2.5,2.5,0,0,1-2.5,2.5H2.5a2.5,2.5,0,0,1-2.5-2.5V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M2,1H13.071a1,1,0,0,1,1,1V65.087a1.5,1.5,0,0,1-1.5,1.5H2.5a1.5,1.5,0,0,1-1.5-1.5V2A1,1,0,0,1,2,1Z" fill="none"/>
+    </g>
+    <g id="C-sharp3" transform="translate(329.5 906)" fill="#001724" stroke="#001724" stroke-width="2">
+      <path d="M0,0H15.071a0,0,0,0,1,0,0V65.087a2.5,2.5,0,0,1-2.5,2.5H2.5a2.5,2.5,0,0,1-2.5-2.5V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M2,1H13.071a1,1,0,0,1,1,1V65.087a1.5,1.5,0,0,1-1.5,1.5H2.5a1.5,1.5,0,0,1-1.5-1.5V2A1,1,0,0,1,2,1Z" fill="none"/>
+    </g>
+    <g id="D-sharp3" transform="translate(353.5 906)" fill="#001724" stroke="#001724" stroke-width="2">
+      <path d="M0,0H15.071a0,0,0,0,1,0,0V65.087a2.5,2.5,0,0,1-2.5,2.5H2.5a2.5,2.5,0,0,1-2.5-2.5V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M2,1H13.071a1,1,0,0,1,1,1V65.087a1.5,1.5,0,0,1-1.5,1.5H2.5a1.5,1.5,0,0,1-1.5-1.5V2A1,1,0,0,1,2,1Z" fill="none"/>
+    </g>
+    <g id="F-sharp3" transform="translate(401.5 906)" fill="#001724" stroke="#001724" stroke-width="2">
+      <path d="M0,0H15.071a0,0,0,0,1,0,0V65.087a2.5,2.5,0,0,1-2.5,2.5H2.5a2.5,2.5,0,0,1-2.5-2.5V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M2,1H13.071a1,1,0,0,1,1,1V65.087a1.5,1.5,0,0,1-1.5,1.5H2.5a1.5,1.5,0,0,1-1.5-1.5V2A1,1,0,0,1,2,1Z" fill="none"/>
+    </g>
+    <g id="G-sharp3" transform="translate(425.5 906)" fill="#001724" stroke="#001724" stroke-width="2">
+      <path d="M0,0H15.071a0,0,0,0,1,0,0V65.087a2.5,2.5,0,0,1-2.5,2.5H2.5a2.5,2.5,0,0,1-2.5-2.5V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M2,1H13.071a1,1,0,0,1,1,1V65.087a1.5,1.5,0,0,1-1.5,1.5H2.5a1.5,1.5,0,0,1-1.5-1.5V2A1,1,0,0,1,2,1Z" fill="none"/>
+    </g>
+    <g id="A-sharp3" transform="translate(449.5 906)" fill="#001724" stroke="#001724" stroke-width="2">
+      <path d="M0,0H15.071a0,0,0,0,1,0,0V65.087a2.5,2.5,0,0,1-2.5,2.5H2.5a2.5,2.5,0,0,1-2.5-2.5V0A0,0,0,0,1,0,0Z" stroke="none"/>
+      <path d="M2,1H13.071a1,1,0,0,1,1,1V65.087a1.5,1.5,0,0,1-1.5,1.5H2.5a1.5,1.5,0,0,1-1.5-1.5V2A1,1,0,0,1,2,1Z" fill="none"/>
+    </g>
+    <g id="pianoBorder" transform="translate(48 906)" fill="none">
+      <path d="M7.483,0H426.517A7.491,7.491,0,0,1,434,7.5v94a7.491,7.491,0,0,1-7.483,7.5H7.483A7.491,7.491,0,0,1,0,101.5V7.5A7.491,7.491,0,0,1,7.483,0Z" stroke="none"/>
+      <path d="M 7.4827880859375 2 C 4.459564208984375 2 2 4.467277526855469 2 7.5 L 2 53.80994415283203 L 2 56.25149917602539 L 2 101.5 C 2 104.5327224731445 4.459564208984375 107 7.4827880859375 107 L 426.5172119140625 107 C 429.5404357910156 107 432 104.5327224731445 432 101.5 L 432 7.5 C 432 4.467277526855469 429.5404357910156 2 426.5172119140625 2 L 7.4827880859375 2 M 7.4827880859375 0 L 426.5172119140625 0 C 430.64990234375 0 434 3.357887268066406 434 7.5 L 434 101.5 C 434 105.6421127319336 430.64990234375 109 426.5172119140625 109 L 7.4827880859375 109 C 3.35015869140625 109 0 105.6421127319336 0 101.5 L 0 56.25149917602539 L 0 53.80994415283203 L 0 7.5 C 0 3.357887268066406 3.35015869140625 0 7.4827880859375 0 Z" stroke="none" fill="#001724"/>
+    </g>
+  </g>
+</svg>
