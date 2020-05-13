@@ -28,7 +28,19 @@ export class Piano extends Component {
     { id: 'G-sharp2', note: 'G#' },
     { id: 'A2', note: 'A' },
     { id: 'A-sharp2', note: 'A#' },
-    { id: 'B2', note: 'B' }
+    { id: 'B2', note: 'B' },
+    { id: 'C3', note: 'C' },
+    { id: 'C-sharp3', note: 'C#' },
+    { id: 'D3', note: 'D' },
+    { id: 'D-sharp3', note: 'D#' },
+    { id: 'E3', note: 'E' },
+    { id: 'F3', note: 'F' },
+    { id: 'F-sharp3', note: 'F#' },
+    { id: 'G3', note: 'G' },
+    { id: 'G-sharp3', note: 'G#' },
+    { id: 'A3', note: 'A' },
+    { id: 'A-sharp3', note: 'A#' },
+    { id: 'B3', note: 'B' }
   ];
 
   render() {
