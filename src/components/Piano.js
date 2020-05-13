@@ -91,7 +91,22 @@ export class Piano extends Component {
     const chordNotesIndex = semitoneIntervals.map(interval => noteIndex + interval);
     const chordNotesId = chordNotesIndex.map(index => this.pianoNotes[index].id);
 
-    return chordNotesId;
+    return [chordNotesId, chordNotesIndex];
+  }
+
+  pickPiano = (chordNotesIndex) => {
+    const firstItem = chordNotesIndex[0];
+    const lastItem = chordNotesIndex[chordNotesIndex.length - 1];
+
+    if (lastItem <= 23) {
+      return pianoC24;
+    } else if (firstItem >= 4 && lastItem <= 27) {
+      return pianoF24;
+    } else if (lastItem <= 28) {
+      return pianoC29;
+    } else {
+      return pianoF31;
+    }
   }
 
   render() {
@@ -101,19 +116,22 @@ export class Piano extends Component {
       height: 'auto'
     }
 
+    const [chordNotesId, chordNotesIndex] = this.makeChord(this.props.selectedNote, this.props.selectedChordType);
+    const piano = this.pickPiano(chordNotesIndex);
+
     return (
       <React.Fragment>
         <S.Text style={{ fontSize: '18px' }}>
           {`${this.props.selectedNote}${this.props.selectedChordType} piano chord`}
         </S.Text>
-        <SvgLoader style={pianoStyle} path={pianoC24}>
+        <SvgLoader style={pianoStyle} path={piano}>
           {/* This resets the piano to its original color.
           Otherwise, the previous selected chords would appear
           along with the new ones, making it unreadable*/}
           <SvgProxy selector="g[fill='none']" fill="none" />
           <SvgProxy selector="g[fill='#001724']" fill="#001724" />
 
-          {this.makeChord(this.props.selectedNote, this.props.selectedChordType).map(note => (
+          {chordNotesId.map(note => (
             <SvgProxy key={note} selector={`#${note}`} fill="#3B93BF" />
           ))}
         </SvgLoader>
