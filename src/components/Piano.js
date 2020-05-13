@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 
 import { SvgLoader, SvgProxy } from 'react-svgmt';
-import piano from '../assets/piano.svg';
+
+import pianoC24 from '../assets/24-c-piano.svg';
+import pianoF24 from '../assets/24-f-piano.svg';
+import pianoC29 from '../assets/29-c-piano.svg';
+import pianoF31 from '../assets/31-f-piano.svg';
 
 export class Piano extends Component {
   pianoNotes = [
