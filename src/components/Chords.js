@@ -25,15 +25,17 @@ export class Chords extends Component {
         { id: 15, name: '13' },
         { id: 16, name: 'm13' },
         { id: 17, name: 'maj13' },
-        { id: 18, name: 'add' },
-        { id: 19, name: '7-5' },
-        { id: 20, name: '7+5' },
-        { id: 21, name: 'sus' },
-        { id: 22, name: 'dim' },
-        { id: 23, name: 'dim7' },
-        { id: 24, name: 'm7b5' },
-        { id: 25, name: 'aug' },
-        { id: 26, name: 'aug7' }
+        { id: 18, name: 'add2' },
+        { id: 19, name: 'add9' },
+        { id: 20, name: '7-5' },
+        { id: 21, name: '7+5' },
+        { id: 22, name: 'sus2' },
+        { id: 23, name: 'sus4' },
+        { id: 24, name: 'dim' },
+        { id: 25, name: 'dim7' },
+        { id: 26, name: 'm7b5' },
+        { id: 27, name: 'aug' },
+        { id: 28, name: 'aug7' }
       ]
     }
   }
