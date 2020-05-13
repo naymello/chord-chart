@@ -47,6 +47,53 @@ export class Piano extends Component {
     { id: 'B3', note: 'B' }
   ];
 
+  getSemitoneIntervals = chordType => {
+    let semitoneInterval;
+
+    switch (chordType) {
+      case '5': return semitoneInterval = [0, 7];
+      case '': return semitoneInterval = [0, 4, 7];
+      case 'm': return semitoneInterval = [0, 3, 7];
+      case 'sus2': return semitoneInterval = [0, 5, 7];
+      case 'sus4': return semitoneInterval = [0, 2, 7];
+      case 'dim': return semitoneInterval = [0, 3, 6];
+      case 'aug': return semitoneInterval = [0, 4, 8];
+      case '7': return semitoneInterval = [0, 4, 7, 10];
+      case 'm7': return semitoneInterval = [0, 3, 7, 10];
+      case 'maj7': return semitoneInterval = [0, 4, 7, 11];
+      case 'mM7': return semitoneInterval = [0, 3, 7, 11];
+      case '6': return semitoneInterval = [0, 4, 7, 9];
+      case 'm6': return semitoneInterval = [0, 3, 7, 9];
+      case 'add2': return semitoneInterval = [0, 2, 4, 7];
+      case 'add9': return semitoneInterval = [0, 4, 7, 14];
+      case '7-5': return semitoneInterval = [0, 4, 6, 10];
+      case '7+5': return semitoneInterval = [0, 4, 8, 10];
+      case 'dim7': return semitoneInterval = [0, 3, 6, 9];
+      case 'm7b5': return semitoneInterval = [0, 3, 6, 10];
+      case 'aug7': return semitoneInterval = [0, 4, 8, 10];
+      case '6/9': return semitoneInterval = [0, 4, 7, 9, 14];
+      case '9': return semitoneInterval = [0, 4, 7, 10, 14];
+      case 'm9': return semitoneInterval = [0, 3, 7, 10, 14];
+      case 'maj9': return semitoneInterval = [0, 4, 7, 11, 14];
+      case '11': return semitoneInterval = [0, 4, 7, 10, 14, 17];
+      case 'm11': return semitoneInterval = [0, 3, 7, 10, 14, 17];
+      case 'maj13': return semitoneInterval = [0, 4, 7, 11, 14, 21];
+      case '13': return semitoneInterval = [0, 4, 7, 10, 14, 17, 21];
+      case 'm13': return semitoneInterval = [0, 3, 7, 10, 14, 17, 21];
+      default: return console.log('Not valid chord type');
+    }
+  }
+
+  makeChord = (selectedNote, chordType) => {
+    const semitoneIntervals = this.getSemitoneIntervals(chordType);
+
+    const noteIndex = this.pianoNotes.findIndex(noteObj => noteObj.note === selectedNote);
+    const chordNotesIndex = semitoneIntervals.map(interval => noteIndex + interval);
+    const chordNotesId = chordNotesIndex.map(index => this.pianoNotes[index].id);
+
+    return chordNotesId;
+  }
+
   render() {
     const pianoStyle = {
       margin: '0 20px',
@@ -55,7 +102,16 @@ export class Piano extends Component {
     }
 
     return (
-      <SvgLoader style={pianoStyle} path={piano}>
+      <SvgLoader style={pianoStyle} path={pianoC24}>
+        {/* This resets the piano to its original color.
+          Otherwise, the previous selected chords would appear
+          along with the new ones, making it unreadable*/}
+        <SvgProxy selector="g[fill='none']" fill="none" />
+        <SvgProxy selector="g[fill='#001724']" fill="#001724" />
+
+        {this.makeChord(this.props.selectedNote, this.props.selectedChordType).map(note => (
+          <SvgProxy key={note} selector={`#${note}`} fill="#3B93BF" />
+        ))}
       </SvgLoader>
     );
   }
