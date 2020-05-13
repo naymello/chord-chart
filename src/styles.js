@@ -44,7 +44,7 @@ export const Chords = styled.form`
 `;
 
 export const Text = styled.span`
-  font-size: 14px;
+  font-size: 16px;
   margin: 20px;
   color: #001724;
   font-weight: bold;
