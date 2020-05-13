@@ -97,7 +97,7 @@ export class Piano extends Component {
 
   render() {
     const pianoStyle = {
-      margin: '0 20px',
+      margin: '15px 20px',
       width: 'calc(100% - 40px)',
       height: 'auto'
     }
