@@ -42,7 +42,7 @@ export class Chords extends Component {
 
   render() {
     return (
-      <div>
+      <React.Fragment>
         <S.Text
           onClick={this.props.toggleShowAll}
         >
@@ -69,7 +69,7 @@ export class Chords extends Component {
             );
           })}
         </S.Chords>
-      </div>
+      </React.Fragment>
     );
   }
 }
