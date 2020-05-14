@@ -7,26 +7,28 @@ export class Chords extends Component {
     'm13', 'maj13', 'add2', 'add9', '7-5', '7+5', 'sus2', 'sus4', 'dim', 'dim7', 'm7b5', 'aug', 'aug7']
 
   render() {
+    const { showAll, toggleShowAll, selectedNote, handleChordChange } = this.props;
+
     return (
       <React.Fragment>
         <S.Text
-          onClick={this.props.toggleShowAll}
+          onClick={toggleShowAll}
         >
-          {this.props.showAll ? 'Hide' : 'Show'} all {this.props.selectedNote} chords
+          {showAll ? 'Hide' : 'Show'} all {selectedNote} chords
         </S.Text>
 
         <S.Chords>
           {this.chordTypes.map(chordType => {
-            const chordName = `${this.props.selectedNote}${chordType}`;
+            const chordName = `${selectedNote}${chordType}`;
 
             return (
-              <div key={chordType} style={{ display: this.props.showAll ? 'block' : 'none' }}>
+              <div key={chordType} style={{ display: showAll ? 'block' : 'none' }}>
                 <input
                   type="radio"
                   id={chordType}
                   name="chord"
                   value={chordType}
-                  onClick={this.props.handleChordChange}
+                  onClick={handleChordChange}
                 />
                 <label htmlFor={chordType}>
                   {chordName}

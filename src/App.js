@@ -41,24 +41,26 @@ class App extends Component {
   }
 
   render() {
+    const { showAll, selectedNote, selectedChordType } = this.state;
+
     return (
       <React.Fragment>
         <S.GlobalStyle />
         <Navbar />
         <Notes
           handleNoteChange={this.handleNoteChange}
-          selectedNote={this.state.selectedNote}
+          selectedNote={selectedNote}
         />
         <Chords
           handleChordChange={this.handleChordChange}
           toggleShowAll={this.toggleShowAll}
-          showAll={this.state.showAll}
-          selectedNote={this.state.selectedNote}
-          selectedChordType={this.state.selectedChordType}
+          showAll={showAll}
+          selectedNote={selectedNote}
+          selectedChordType={selectedChordType}
         />
         <Piano
-          selectedNote={this.state.selectedNote}
-          selectedChordType={this.state.selectedChordType}
+          selectedNote={selectedNote}
+          selectedChordType={selectedChordType}
         />
       </React.Fragment>
     );

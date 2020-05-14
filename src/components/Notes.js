@@ -25,11 +25,14 @@ export class Notes extends Component {
   }
 
   render() {
+    const { notes } = this.state;
+    const { handleNoteChange, selectedNote } = this.props;
+    
     return (
       <React.Fragment>
         <S.Text>Select a note:</S.Text>
         <S.Chords>
-          {this.state.notes.map(note => {
+          {notes.map(note => {
             return (
               <div key={note.id}>
                 <input
@@ -37,10 +40,10 @@ export class Notes extends Component {
                   id={note.name}
                   name="note"
                   value={note.name}
-                  onClick={this.props.handleNoteChange}
+                  onClick={handleNoteChange}
                 />
                 <label
-                  style={{ color: note.name === this.props.selectedNote ? '#3B93BF' : '#001724' }}
+                  style={{ color: note.name === selectedNote ? '#3B93BF' : '#001724' }}
                   htmlFor={note.name}
                 >
                   {note.name}

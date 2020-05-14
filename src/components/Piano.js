@@ -88,10 +88,10 @@ export class Piano extends Component {
     const rootIndex = this.pianoNotes.findIndex(noteObj => noteObj.note === selectedNote);
     const chordIntervals = this.semitoneIntervals.get(chordType);
     const chordNotesIndex = chordIntervals.map(interval => rootIndex + interval);
-    const chordNotesId = chordNotesIndex.map(index => this.pianoNotes[index].id);
-    const chordNotesName = chordNotesIndex.map(index => this.pianoNotes[index].note);
+    const chordNotesIds = chordNotesIndex.map(index => this.pianoNotes[index].id);
+    const chordNotesNames = chordNotesIndex.map(index => this.pianoNotes[index].note);
 
-    return [chordNotesId, chordNotesIndex, chordNotesName];
+    return [chordNotesIds, chordNotesIndex, chordNotesNames];
   }
 
   /* pickPiano method returns the ideal piano SVG to the chord to be displayed as some chords 
@@ -112,20 +112,25 @@ export class Piano extends Component {
   }
 
   render() {
+    const { selectedNote, selectedChordType } = this.props;
+
     const pianoStyle = {
       margin: '15px 20px',
       width: 'calc(100% - 40px)',
       height: 'auto'
     }
 
-    const [chordNotesId, chordNotesIndex, chordNotesName] = this.makeChord(this.props.selectedNote, this.props.selectedChordType);
+    const [chordNotesIds, chordNotesIndex, chordNotesNames] = this.makeChord(selectedNote, selectedChordType);
     const piano = this.pickPiano(chordNotesIndex);
+
+    const chordName = `${selectedNote}${selectedChordType}`;
 
     return (
       <React.Fragment>
         <S.Text style={{ fontSize: '18px' }}>
-          {`${this.props.selectedNote}${this.props.selectedChordType} piano chord`}
+          {`${chordName} piano chord`}
         </S.Text>
+
         <SvgLoader style={pianoStyle} path={piano}>
           {/* This resets the piano to its original color.
           Otherwise, the previous selected chords would appear
@@ -133,17 +138,18 @@ export class Piano extends Component {
           <SvgProxy selector=".white-key" fill="none" />
           <SvgProxy selector=".black-key" fill="#001724" />
 
-          {chordNotesId.map(note => (
+          {chordNotesIds.map(note => (
             <SvgProxy key={note} selector={`#${note}`} fill="#3B93BF" />
           ))}
         </SvgLoader>
+
         <S.Text>
           Notes:
-          {chordNotesName.map(name => (
-          <S.Text key={name} style={{ margin: '5px' }}>
-            {name}
-          </S.Text>
-        ))}
+          {chordNotesNames.map(name => (
+            <S.Text key={name} style={{ margin: '5px' }}>
+              {name}
+            </S.Text>
+          ))}
         </S.Text>
       </React.Fragment>
     );
