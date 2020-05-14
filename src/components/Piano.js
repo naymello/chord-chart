@@ -82,6 +82,8 @@ export class Piano extends Component {
 
   semitoneIntervals = new Map(this.semitoneIntervalsArr);
 
+  /* makeChord method makes chords based on the index of the root (first/lowest note) of a chord.
+  The other notes are got by simply adding the interval (in semitones) to it. */
   makeChord = (selectedNote, chordType) => {
     const rootIndex = this.pianoNotes.findIndex(noteObj => noteObj.note === selectedNote);
     const chordIntervals = this.semitoneIntervals.get(chordType);
@@ -91,6 +93,8 @@ export class Piano extends Component {
     return [chordNotesId, chordNotesIndex];
   }
 
+  /* pickPiano method returns the ideal piano SVG to the chord to be displayed as some chords 
+  don't fit the size of some piano SVGs. */
   pickPiano = (chordNotesIndex) => {
     const firstItem = chordNotesIndex[0];
     const lastItem = chordNotesIndex[chordNotesIndex.length - 1];
