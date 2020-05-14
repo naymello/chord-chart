@@ -89,8 +89,9 @@ export class Piano extends Component {
     const chordIntervals = this.semitoneIntervals.get(chordType);
     const chordNotesIndex = chordIntervals.map(interval => rootIndex + interval);
     const chordNotesId = chordNotesIndex.map(index => this.pianoNotes[index].id);
+    const chordNotesName = chordNotesIndex.map(index => this.pianoNotes[index].note);
 
-    return [chordNotesId, chordNotesIndex];
+    return [chordNotesId, chordNotesIndex, chordNotesName];
   }
 
   /* pickPiano method returns the ideal piano SVG to the chord to be displayed as some chords 
@@ -117,7 +118,7 @@ export class Piano extends Component {
       height: 'auto'
     }
 
-    const [chordNotesId, chordNotesIndex] = this.makeChord(this.props.selectedNote, this.props.selectedChordType);
+    const [chordNotesId, chordNotesIndex, chordNotesName] = this.makeChord(this.props.selectedNote, this.props.selectedChordType);
     const piano = this.pickPiano(chordNotesIndex);
 
     return (
@@ -136,6 +137,14 @@ export class Piano extends Component {
             <SvgProxy key={note} selector={`#${note}`} fill="#3B93BF" />
           ))}
         </SvgLoader>
+        <S.Text>
+          Notes:
+          {chordNotesName.map(name => (
+          <S.Text key={name} style={{ margin: '5px' }}>
+            {name}
+          </S.Text>
+        ))}
+        </S.Text>
       </React.Fragment>
     );
   }
