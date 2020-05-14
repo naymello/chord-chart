@@ -83,9 +83,9 @@ export class Piano extends Component {
   semitoneIntervals = new Map(this.semitoneIntervalsArr);
 
   makeChord = (selectedNote, chordType) => {
-    const noteIndex = this.pianoNotes.findIndex(noteObj => noteObj.note === selectedNote);
-    const semitoneIntervals = this.semitoneIntervals.get(chordType);
-    const chordNotesIndex = semitoneIntervals.map(interval => noteIndex + interval);
+    const rootIndex = this.pianoNotes.findIndex(noteObj => noteObj.note === selectedNote);
+    const chordIntervals = this.semitoneIntervals.get(chordType);
+    const chordNotesIndex = chordIntervals.map(interval => rootIndex + interval);
     const chordNotesId = chordNotesIndex.map(index => this.pianoNotes[index].id);
 
     return [chordNotesId, chordNotesIndex];
