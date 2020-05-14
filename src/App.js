@@ -47,21 +47,23 @@ class App extends Component {
       <React.Fragment>
         <S.GlobalStyle />
         <Navbar />
-        <Notes
-          handleNoteChange={this.handleNoteChange}
-          selectedNote={selectedNote}
-        />
-        <Chords
-          handleChordChange={this.handleChordChange}
-          toggleShowAll={this.toggleShowAll}
-          showAll={showAll}
-          selectedNote={selectedNote}
-          selectedChordType={selectedChordType}
-        />
-        <Piano
-          selectedNote={selectedNote}
-          selectedChordType={selectedChordType}
-        />
+        <S.Wrapper>
+          <Notes
+            handleNoteChange={this.handleNoteChange}
+            selectedNote={selectedNote}
+          />
+          <Chords
+            handleChordChange={this.handleChordChange}
+            toggleShowAll={this.toggleShowAll}
+            showAll={showAll}
+            selectedNote={selectedNote}
+            selectedChordType={selectedChordType}
+          />
+          <Piano
+            selectedNote={selectedNote}
+            selectedChordType={selectedChordType}
+          />
+        </S.Wrapper>
       </React.Fragment>
     );
   }

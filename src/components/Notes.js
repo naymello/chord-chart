@@ -31,7 +31,7 @@ export class Notes extends Component {
     return (
       <React.Fragment>
         <S.Text>Select a note:</S.Text>
-        <S.GridForm>
+        <S.GridForm desktopColumns="12">
           {notes.map(note => {
             return (
               <div key={note.id}>

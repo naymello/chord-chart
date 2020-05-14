@@ -1,6 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
-
 export const GlobalStyle = createGlobalStyle`
   * {
     font-family: 'Poppins', sans-serif;
@@ -32,6 +31,12 @@ export const GridForm = styled.form`
   margin: 20px;
   justify-items: center;
 
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(${props => props.desktopColumns}, 1fr);
+    margin: 20px auto;
+    row-gap: 10px;
+  }
+
   input {
     appearance: none;
     outline: none;
@@ -48,4 +53,9 @@ export const Text = styled.span`
   margin: 20px;
   color: #001724;
   font-weight: bold;
+`;
+
+export const Wrapper = styled.section`
+  max-width: 768px;
+  margin: 0 auto;
 `;

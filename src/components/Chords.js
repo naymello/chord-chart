@@ -17,7 +17,7 @@ export class Chords extends Component {
           {showAll ? 'Hide' : 'Show'} all {selectedNote} chords
         </S.Text>
 
-        <S.GridForm>
+        <S.GridForm desktopColumns="6">
           {this.chordTypes.map(chordType => {
             const chordName = `${selectedNote}${chordType}`;
 
