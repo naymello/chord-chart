@@ -48,46 +48,43 @@ export class Piano extends Component {
     { id: 'B3', note: 'B' }
   ];
 
-  getSemitoneIntervals = chordType => {
-    let semitoneInterval;
+  semitoneIntervalsArr = [
+    ['5', [0, 7]],
+    ['', [0, 4, 7]],
+    ['m', [0, 3, 7]],
+    ['sus2', [0, 5, 7]],
+    ['sus4', [0, 2, 7]],
+    ['dim', [0, 3, 6]],
+    ['aug', [0, 4, 8]],
+    ['7', [0, 4, 7, 10]],
+    ['m7', [0, 3, 7, 10]],
+    ['maj7', [0, 4, 7, 11]],
+    ['mM7', [0, 3, 7, 11]],
+    ['6', [0, 4, 7, 9]],
+    ['m6', [0, 3, 7, 9]],
+    ['add2', [0, 2, 4, 7]],
+    ['add9', [0, 4, 7, 14]],
+    ['7-5', [0, 4, 6, 10]],
+    ['7+5', [0, 4, 8, 10]],
+    ['dim7', [0, 3, 6, 9]],
+    ['m7b5', [0, 3, 6, 10]],
+    ['aug7', [0, 4, 8, 10]],
+    ['6/9', [0, 4, 7, 9, 14]],
+    ['9', [0, 4, 7, 10, 14]],
+    ['m9', [0, 3, 7, 10, 14]],
+    ['maj9', [0, 4, 7, 11, 14]],
+    ['11', [0, 4, 7, 10, 14, 17]],
+    ['m11', [0, 3, 7, 10, 14, 17]],
+    ['maj13', [0, 4, 7, 11, 14, 21]],
+    ['13', [0, 4, 7, 10, 14, 17, 21]],
+    ['m13', [0, 3, 7, 10, 14, 17, 21]]
+  ];
 
-    switch (chordType) {
-      case '5': return semitoneInterval = [0, 7];
-      case '': return semitoneInterval = [0, 4, 7];
-      case 'm': return semitoneInterval = [0, 3, 7];
-      case 'sus2': return semitoneInterval = [0, 5, 7];
-      case 'sus4': return semitoneInterval = [0, 2, 7];
-      case 'dim': return semitoneInterval = [0, 3, 6];
-      case 'aug': return semitoneInterval = [0, 4, 8];
-      case '7': return semitoneInterval = [0, 4, 7, 10];
-      case 'm7': return semitoneInterval = [0, 3, 7, 10];
-      case 'maj7': return semitoneInterval = [0, 4, 7, 11];
-      case 'mM7': return semitoneInterval = [0, 3, 7, 11];
-      case '6': return semitoneInterval = [0, 4, 7, 9];
-      case 'm6': return semitoneInterval = [0, 3, 7, 9];
-      case 'add2': return semitoneInterval = [0, 2, 4, 7];
-      case 'add9': return semitoneInterval = [0, 4, 7, 14];
-      case '7-5': return semitoneInterval = [0, 4, 6, 10];
-      case '7+5': return semitoneInterval = [0, 4, 8, 10];
-      case 'dim7': return semitoneInterval = [0, 3, 6, 9];
-      case 'm7b5': return semitoneInterval = [0, 3, 6, 10];
-      case 'aug7': return semitoneInterval = [0, 4, 8, 10];
-      case '6/9': return semitoneInterval = [0, 4, 7, 9, 14];
-      case '9': return semitoneInterval = [0, 4, 7, 10, 14];
-      case 'm9': return semitoneInterval = [0, 3, 7, 10, 14];
-      case 'maj9': return semitoneInterval = [0, 4, 7, 11, 14];
-      case '11': return semitoneInterval = [0, 4, 7, 10, 14, 17];
-      case 'm11': return semitoneInterval = [0, 3, 7, 10, 14, 17];
-      case 'maj13': return semitoneInterval = [0, 4, 7, 11, 14, 21];
-      case '13': return semitoneInterval = [0, 4, 7, 10, 14, 17, 21];
-      case 'm13': return semitoneInterval = [0, 3, 7, 10, 14, 17, 21];
-      default: return console.log('Not valid chord type');
-    }
-  }
+  semitoneIntervals = new Map(this.semitoneIntervalsArr);
 
   makeChord = (selectedNote, chordType) => {
     const noteIndex = this.pianoNotes.findIndex(noteObj => noteObj.note === selectedNote);
-    const semitoneIntervals = this.getSemitoneIntervals(chordType);
+    const semitoneIntervals = this.semitoneIntervals.get(chordType);
     const chordNotesIndex = semitoneIntervals.map(interval => noteIndex + interval);
     const chordNotesId = chordNotesIndex.map(index => this.pianoNotes[index].id);
 
