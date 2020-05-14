@@ -31,7 +31,7 @@ export class Notes extends Component {
     return (
       <React.Fragment>
         <S.Text>Select a note:</S.Text>
-        <S.Chords>
+        <S.GridForm>
           {notes.map(note => {
             return (
               <div key={note.id}>
@@ -51,7 +51,7 @@ export class Notes extends Component {
               </div>
             );
           })}
-        </S.Chords>
+        </S.GridForm>
       </React.Fragment>
     );
   }

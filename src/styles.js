@@ -24,7 +24,7 @@ export const Logo = styled.img`
   width: 60px;
 `;
 
-export const Chords = styled.form`
+export const GridForm = styled.form`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: repeat(3, 1fr);

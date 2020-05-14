@@ -17,7 +17,7 @@ export class Chords extends Component {
           {showAll ? 'Hide' : 'Show'} all {selectedNote} chords
         </S.Text>
 
-        <S.Chords>
+        <S.GridForm>
           {this.chordTypes.map(chordType => {
             const chordName = `${selectedNote}${chordType}`;
 
@@ -36,7 +36,7 @@ export class Chords extends Component {
               </div>
             );
           })}
-        </S.Chords>
+        </S.GridForm>
       </React.Fragment>
     );
   }
