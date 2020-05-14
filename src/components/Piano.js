@@ -125,8 +125,8 @@ export class Piano extends Component {
           {/* This resets the piano to its original color.
           Otherwise, the previous selected chords would appear
           along with the new ones, making it unreadable*/}
-          <SvgProxy selector="g[fill='none']" fill="none" />
-          <SvgProxy selector="g[fill='#001724']" fill="#001724" />
+          <SvgProxy selector=".white-key" fill="none" />
+          <SvgProxy selector=".black-key" fill="#001724" />
 
           {chordNotesId.map(note => (
             <SvgProxy key={note} selector={`#${note}`} fill="#3B93BF" />
