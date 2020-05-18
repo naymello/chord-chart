@@ -6,10 +6,10 @@
   <img src="https://i.imgur.com/1sQPXhw.png" width="275px">
 </p>
 
-## O que é?
-Com o objetivo de facilitar o aprendizado de acordes no piano, o Chord Chart cataloga 349 acordes que podem ser acessados de maneira prática, fácil e rápida.
+## What is it?
+With the goal of make it easier to learn piano chords, the web application Chord Chart lists 349 chords that can be easily found simply by choosing a root note and the chord cathegory.
 
-## Tecnologias utilizadas
+## Technologies used
 - React
 - Styled Components
-- Manipulação de SVGs com o [React SVG Manipulation Tools](https://github.com/hugozap/react-svgmt)
+- SVG manipulation with [React SVG Manipulation Tools](https://github.com/hugozap/react-svgmt)
