@@ -13,6 +13,7 @@ export class Chords extends Component {
       <React.Fragment>
         <S.Text
           onClick={toggleShowAll}
+          style={{ cursor: 'pointer' }}
         >
           {showAll ? 'Hide' : 'Show'} all {selectedNote} chords
         </S.Text>
@@ -30,7 +31,10 @@ export class Chords extends Component {
                   value={chordType}
                   onClick={handleChordChange}
                 />
-                <label htmlFor={chordType}>
+                <label
+                  htmlFor={chordType}
+                  style={{ cursor: 'pointer' }}
+                >
                   {chordName}
                 </label>
               </div>

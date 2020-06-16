@@ -43,7 +43,10 @@ export class Notes extends Component {
                   onClick={handleNoteChange}
                 />
                 <label
-                  style={{ color: note.name === selectedNote ? '#3B93BF' : '#001724' }}
+                  style={{ 
+                    color: note.name === selectedNote ? '#3B93BF' : '#001724',
+                    cursor: 'pointer'
+                  }}
                   htmlFor={note.name}
                 >
                   {note.name}
