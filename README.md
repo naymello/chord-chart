@@ -7,7 +7,7 @@
 </p>
 
 ## What is it?
-With the goal of make it easier to learn piano chords, the web application Chord Chart lists 349 chords that can be easily found simply by choosing a root note and the chord cathegory.
+With the goal of making it easier to learn piano chords, the web application Chord Chart lists 349 chords that can be easily found simply by choosing a root note and the chord cathegory.
 
 ## Technologies used
 - React
